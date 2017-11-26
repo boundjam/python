@@ -1,15 +1,18 @@
-name='Zach Sharma'
-age=9
-hight=48#that was a guess
-weight=72
-eyes='brown'
-teeth='white'
-hair='brown'
-print(f"lets talk about {name}")
-print(f"He's {hight} inches tall mabe")
-print(f"He's {weight} pounds heavy")
-print("actully that isn't that heavy")
-print(f"He has {eyes} eyes and {hair} hair")
-print(f"His teeth are normaly {teeth}")
-total=age+hight+weight
-print(f"if I add {age} , {hight} and {weight} I will get {total}")
+print("I will Now count my chickens")
+
+print("Hens",25+30/6)
+print("roosters",100-25*3%4)
+
+print("Now I will count the eggs:")
+print(3+2+1-5+4%2-1/4+6)
+
+print("Is it true that 3+2<5-7")
+print(3+2<5-7)
+print("what is 3+2?",3+2)
+print("what is 5-7?",5-7)
+print("so that is why it was false.")
+print("How about some more")
+
+print("is it greater?",5>-2)
+print("is it greater or equal?",5>=-2)
+print("is it less or equal?",5<=-2)
