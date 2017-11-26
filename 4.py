@@ -1,15 +1,14 @@
-name='Zach Sharma'
-age=9
-hight=48#that was a guess
-weight=72
-eyes='brown'
-teeth='white'
-hair='brown'
-print(f"lets talk about {name}")
-print(f"He's {hight} inches tall mabe")
-print(f"He's {weight} pounds heavy")
-print("actully that isn't that heavy")
-print(f"He has {eyes} eyes and {hair} hair")
-print(f"His teeth are normaly {teeth}")
-total=age+hight+weight
-print(f"if I add {age} , {hight} and {weight} I will get {total}")
+cars=100
+space_in_a_car=4.0
+drivers=30
+passengers=90
+cars_not_driven=cars-drivers
+cars_driven=drivers
+carpool_capasity=cars_not_driven*space_in_a_car
+avrege_people_in_car=passengers/cars_driven
+print("there are",cars,"cars avalible")
+print("there are only",drivers,"drivers avalible")
+print("there will be",cars_not_driven,"cars empty today")
+print("we can transport",carpool_capasity,"people today")
+print("we have",passengers,"people to carpool today")
+print("we need to put",avrege_people_in_car,"in each car")
