@@ -1,4 +1,4 @@
-from srs import argv
+from sys import argv
 
 User_Name, filename = argv
 txt= open(filename)
