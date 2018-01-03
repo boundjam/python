@@ -1,6 +1,6 @@
 from sys import argv
 
-User_Name, filename = argv
+filename, User_Name = argv
 txt= open(filename)
 
 print(f"Here's your file {filename}:")
