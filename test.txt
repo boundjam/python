@@ -1,1 +1,3 @@
-Blah blah blah How Re you fdjsl fkjdslfkjldfkjs;
+print("hello")
+print("I Don't Know What I Am DOing")
+Input("What is Your name")

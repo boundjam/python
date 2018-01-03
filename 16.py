@@ -12,7 +12,7 @@ print("Opening the file...")
 target = open(filename,'w')
 
 print("Truncating the file. Goodbye!")
-target.Truncate()
+target.truncate()
 
 print("Now I'm going to ask you for a few lines.")
 
