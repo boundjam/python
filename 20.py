@@ -8,13 +8,22 @@ def rewind(f):
 def print_a_line(line_count, f):
     print(line_count, f.readline())
 
-Current_file=open(input_file)
+current_file=open(input_file)
+
 print("first lets print the whole file:\n")
-print_all(Current_file)
+
+print_all(current_file)
+
 print("Now lets Rewind kind of like a tape:")
-rewind(Current_file)
+
+rewind(current_file)
+
 print("lets print three lines")
+
 current_line=1
-print_a_line(current_line,Current_file)
+
+print_a_line(current_line,current_file)
+
 current_line=current_line+1
-print_a_line(current_line,Current_file)
+
+print_a_line(current_line,current_file)
