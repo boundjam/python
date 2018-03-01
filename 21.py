@@ -1,3 +1,3 @@
 import turtle
-t = turtle  
+t = turtle.color()
 t.right(90)
