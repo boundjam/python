@@ -11,8 +11,7 @@ input("?")
 print("Opening the file...")
 target = open(filename,'w')
 
-print("Truncating the file. Goodbye!")
-target.truncate()
+
 
 print("Now I'm going to ask you for a few lines.")
 
@@ -20,7 +19,7 @@ line1=input("line1:")
 line2=input("line2:")
 line3=input("line3:")
 
-print("I am going to write this to thew file")
+print("I am going to write this to the file")
 
 target.write(line1)
 target.write("\n")
@@ -28,6 +27,9 @@ target.write(line2)
 target.write("\n")
 target.write(line3)
 target.write("\n")
+
+print("Truncating the file. Goodbye!")
+target.truncate()
 
 print("and Finally we close it")
 target.close()
