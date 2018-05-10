@@ -1,5 +1,5 @@
 days="mon tue wed thu sat sun"
-months="jan\nfeb\nmar\njun\njul\naug"
+months="Jan\nFeb\nMar\nApr\nMay\nJun"
 print("here are the days:",days)
 print("here are they months:",months)
 print("""
