@@ -31,7 +31,9 @@ text_turtle.hideturtle()
 score_turtle = t.Turtle()
 score_turtle.ht()
 score_turtle.speed(0)
-
+score_turtle2 = t.Turtle()
+score_turtle2.ht()
+score_turtle2.speed(0)
 
 def outside_window(caterpillar):
     left_wall = -t.window_width()/2
@@ -60,11 +62,23 @@ def game_over():
 
 def display_score(current_score):
     score_turtle.clear()
+    score_turtle.color('red')
     score_turtle.penup()
     x = (t.window_width() / 2) - 50
     y = (t.window_height()/2) - 50
     score_turtle.setpos(x, y)
     score_turtle.write(str(current_score), align='right',
+                       font=('Arial', 40, 'bold'))
+
+
+def display_score2(current_score2):
+    score_turtle2.clear()
+    score_turtle2.penup()
+    score_turtle2.color('blue')
+    x = (t.window_width() / 6) - 50
+    y = (t.window_height() / 2) - 50
+    score_turtle2.setpos(x, y)
+    score_turtle2.write(str(current_score2), align='right',
                        font=('Arial', 40, 'bold'))
 
 
@@ -81,8 +95,11 @@ def start_game():
         return
     game_started = True
     score = 0
+    score2 = 0
     text_turtle.clear()
     caterpiller_speed = 2
+    caterpiller2_speed = 2
+    caterpiller2_length = 3
     caterpiller_length = 3
     caterpiller.shapesize(1, caterpiller_length, 1)
     caterpiller.st()
@@ -91,18 +108,25 @@ def start_game():
     caterpiller2.st()
 
     display_score(score)
+    display_score2(score2)
     place_leaf()
     while True:
         caterpiller.forward(caterpiller_speed)
-        caterpiller2.forward(caterpiller_speed)
-        if caterpiller.distance(leaf) < 20 or caterpiller2.distance(leaf) < 20:
+        caterpiller2.forward(caterpiller2_speed)
+        if caterpiller.distance(leaf) < 20:
             place_leaf()
             caterpiller_length = caterpiller_length+1
             caterpiller.shapesize(1, caterpiller_length, 1)
-            caterpiller2.shapesize(1, caterpiller_length, 1)
             caterpiller_speed = caterpiller_speed+1
             score = score+10
             display_score(score)
+        if caterpiller2.distance(leaf) < 20:
+            place_leaf()
+            caterpiller2_length = caterpiller2_length+1
+            caterpiller2.shapesize(1, caterpiller2_length, 1)
+            caterpiller2_speed = caterpiller2_speed+1
+            display_score2(score2)
+            score2=score2+10
         if outside_window(caterpiller) or outside_window(caterpiller2):
             game_over()
             break
