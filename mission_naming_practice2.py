@@ -1,12 +1,11 @@
 import random       # I get the random module
 
 
-def get_question():
+def get_question(): # this function will ask the question and see if it is right
     misson_names = ['SPACE TRAVEL','SOLAR PANEL ARRAY','3D PRINTING','CRATER CROSSING','EXTRACTION','SPACE STATION MODULES','SPACE WALK EMERGENCY','AEROBIC EXERCISE','STRENGTH EXERCISE','FOOD PRODUCTION','ESCAPE VELOCITY','SATELLITE ORBITS','OBSERVATORY','METEROID DEFLECTION','LANDER TOUCH-DOWN']
     while True:
         M = 'What is the Mission Name for'
         mission = random.randint(1,15)
-        print('DADDY STOP WATCHING ME')
         if mission < 10:
             order1 = random.randint(1,3)
             order2 = random.randint(1,3)
