@@ -6,7 +6,7 @@ def get_question(): # this function will ask the question and see if it is right
     while True:
         M = 'What is the Mission Name for'
         mission = random.randint(1,15)
-        if mission > 10:
+        if mission < 10:
             order1 = random.randint(1,3)
             order2 = random.randint(1,3)
             order3 = random.randint(1,3)
