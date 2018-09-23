@@ -1,9 +1,22 @@
 import random       # I get the random module
 
+# import only system from os 
+from os import system, name 
 
+def clear(): 
+  
+    # for windows 
+    if name == 'nt': 
+        _ = system('cls') 
+  
+    # for mac and linux(here, os.name is 'posix') 
+    else: 
+        _ = system('clear')
+		
 def get_question(): # this function will ask the question and see if it is right
     misson_names = ['SPACE TRAVEL','SOLAR PANEL ARRAY','3D PRINTING','CRATER CROSSING','EXTRACTION','SPACE STATION MODULES','SPACE WALK EMERGENCY','AEROBIC EXERCISE','STRENGTH EXERCISE','FOOD PRODUCTION','ESCAPE VELOCITY','SATELLITE ORBITS','OBSERVATORY','METEROID DEFLECTION','LANDER TOUCH-DOWN']
     while True:
+        clear()
         M = 'What is the Mission Name for'
         mission = random.randint(1,15)
         if mission < 10:
